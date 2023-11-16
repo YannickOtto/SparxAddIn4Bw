@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33DB2261-76DA-4AB7-AC1C-AF43A58AF427}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Requirement_Plugin</RootNamespace>
+    <AssemblyName>Requirement_Plugin</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\AppData\Local\EA_Addins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>1</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\Desktop\Test\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Check\Check.cs" />
+    <Compile Include="Database_Connection\SQLITE\SQLITE_Interface.cs" />
+    <Compile Include="Database_Connection\ODBC\ODBC_Interface.cs" />
+    <Compile Include="Database_Connection\DB\DB_Input.cs" />
+    <Compile Include="Database_Connection\DB\DB_Insert.cs" />
+    <Compile Include="Database_Connection\DB\DB_Return.cs" />
+    <Compile Include="Database_Connection\Repository\Repository_ODBC.cs" />
+    <Compile Include="Diagram_Elements\Diagram_Element.cs" />
+    <Compile Include="Diagram_Elements\Diagram_Elements.cs" />
+    <Compile Include="Diagram_Elements\Diagram_Links.cs" />
+    <Compile Include="Domain\Bewertung\Bewertung.cs" />
+    <Compile Include="Element\Element_Design.cs" />
+    <Compile Include="Element\Element_Environmental.cs" />
+    <Compile Include="Element\Element_Measurement.cs" />
+    <Compile Include="Element\Element_Process.cs" />
+    <Compile Include="Element\Element_Typvertreter.cs" />
+    <Compile Include="Ennumeration\Nachweisart\Nachweisarten.cs" />
+    <Compile Include="Ennumeration\NACHWEIS_ENUM.cs" />
+    <Compile Include="Ennumeration\Prog\DB_Type.cs" />
+    <Compile Include="Ennumeration\Prog\W_Constraint_Type.cs" />
+    <Compile Include="Export\Export_Afo_Mapping.cs" />
+    <Compile Include="Export\Export_technisch_Funktionale_Leitungswerte.cs" />
+    <Compile Include="Export\Export_excel.cs" />
+    <Compile Include="Forms\AFO_Erstellung\Abfrage_Annahme_Aenderung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AFO_Erstellung\Abfrage_Annahme_Aenderung.Designer.cs">
+      <DependentUpon>Abfrage_Annahme_Aenderung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AFO_Mgmt\Auswahl_AFO_Mgmt_Connectoren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AFO_Mgmt\Auswahl_AFO_Mgmt_Connectoren.Designer.cs">
+      <DependentUpon>Auswahl_AFO_Mgmt_Connectoren.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AFO_Mgmt\Auswahl_AFO_Mgmt_Replaces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AFO_Mgmt\Auswahl_AFO_Mgmt_Replaces.Designer.cs">
+      <DependentUpon>Auswahl_AFO_Mgmt_Replaces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Analyse\Auswahl_Anwendungsfall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Analyse\Auswahl_Anwendungsfall.Designer.cs">
+      <DependentUpon>Auswahl_Anwendungsfall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Analyse\Auswahl_Systemelemente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Analyse\Auswahl_Systemelemente.Designer.cs">
+      <DependentUpon>Auswahl_Systemelemente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bewertung\Bewertung_UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bewertung\Bewertung_UI.Designer.cs">
+      <DependentUpon>Bewertung_UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Export_Auswahl\Auswahl_Catalogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Export_Auswahl\Auswahl_Catalogue.Designer.cs">
+      <DependentUpon>Auswahl_Catalogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Misc\Optionen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Misc\Optionen.Designer.cs">
+      <DependentUpon>Optionen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\XAC\Choose_Import_Elements_To_Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\XAC\Choose_Import_Elements_To_Delete.Designer.cs">
+      <DependentUpon>Choose_Import_Elements_To_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\XAC\Choose_Systemelement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\XAC\Choose_Systemelement.Designer.cs">
+      <DependentUpon>Choose_Systemelement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Misc\DB_Auswahl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Misc\DB_Auswahl.Designer.cs">
+      <DependentUpon>DB_Auswahl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Misc\DB_Auswahl_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Misc\DB_Auswahl_2.Designer.cs">
+      <DependentUpon>DB_Auswahl_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AFO_Erstellung\Form_Edit_Requirement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AFO_Erstellung\Form_Edit_Requirement.Designer.cs">
+      <DependentUpon>Form_Edit_Requirement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AFO_Erstellung\NonFunctional_Decomposition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AFO_Erstellung\NonFunctional_Decomposition.Designer.cs">
+      <DependentUpon>NonFunctional_Decomposition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Metamodell\Synch_MM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Metamodell\Synch_MM.Designer.cs">
+      <DependentUpon>Synch_MM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database_Connection\DB\DB_Interface.cs" />
+    <Compile Include="Interfaces\DB\Interface_Collection_Requirements.cs" />
+    <Compile Include="Interfaces\DB\Interface_Connectors_Requirement.cs" />
+    <Compile Include="Interfaces\DB\Interface_XML.cs" />
+    <Compile Include="Interfaces\ODBC\Interface_Collection_ODBC.cs" />
+    <Compile Include="Interfaces\DB\Interface_Collection.cs" />
+    <Compile Include="Interfaces\DB\Interface_Connectors.cs" />
+    <Compile Include="Interfaces\DB\Interface_Constraint.cs" />
+    <Compile Include="Interfaces\DB\Interface_Element.cs" />
+    <Compile Include="Interfaces\DB\Interface_Glossar.cs" />
+    <Compile Include="Interfaces\DB\Interface_Package.cs" />
+    <Compile Include="Interfaces\DB\Interface_TaggedValue.cs" />
+    <Compile Include="Metamodel\Connector_Metamodel.cs" />
+    <Compile Include="Metamodel\Element_Metamodel.cs" />
+    <Compile Include="Metamodel\Create_Metamodel_Class.cs" />
+    <Compile Include="Database_Connection\oleDB\OLEDB_Interface.cs" />
+    <Compile Include="Forms\Analyse\Choose_Analyse_Patterns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Analyse\Choose_Analyse_Patterns.Designer.cs">
+      <DependentUpon>Choose_Analyse_Patterns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\XAC\Choose_Export_Flat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\XAC\Choose_Export_Flat.Designer.cs">
+      <DependentUpon>Choose_Export_Flat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Metamodell\Create_Metamodel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Metamodell\Create_Metamodel.Designer.cs">
+      <DependentUpon>Create_Metamodel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metamodel\Issues.cs" />
+    <Compile Include="Metamodel\TV_Map.cs" />
+    <Compile Include="Metamodel\XML_Handler_Profil.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="Repository_Elements\Abnahmekriterium.cs" />
+    <Compile Include="Repository_Elements\Activity.cs" />
+    <Compile Include="Repository_Elements\Capability.cs" />
+    <Compile Include="EAAddinFramework\EAAddinBase.cs" />
+    <Compile Include="Element\Element_Functional.cs" />
+    <Compile Include="Element\Element_User.cs" />
+    <Compile Include="Forms\AFO_Erstellung\Choose_Interface_Modus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AFO_Erstellung\Choose_Interface_Modus.Designer.cs">
+      <DependentUpon>Choose_Interface_Modus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Addinn_Main.cs" />
+    <Compile Include="Element\Element_Interface_Bidirectional.cs" />
+    <Compile Include="Ennumeration\Anforderung\AFO_BEZUG.cs" />
+    <Compile Include="Ennumeration\Anforderung\AFO_CPM_PHASE.cs" />
+    <Compile Include="Ennumeration\Anforderung\AFO_DETAILSTUFE.cs" />
+    <Compile Include="Ennumeration\AFO_ENUM.cs" />
+    <Compile Include="Ennumeration\Anforderung\AFO_FUNKTIONAL.cs" />
+    <Compile Include="Ennumeration\Anforderung\AFO_KRITIKALITAET.cs" />
+    <Compile Include="Ennumeration\Anforderung\AFO_OPERATIVEBEWERTUNG.cs" />
+    <Compile Include="Ennumeration\Anforderung\AFO_PRIORITAET_VERGABE.cs" />
+    <Compile Include="Ennumeration\Anforderung\AFO_PROJEKTROLLE.cs" />
+    <Compile Include="Ennumeration\Anforderung\AFO_QS_STATUS.cs" />
+    <Compile Include="Ennumeration\Anforderung\AFO_STATUS.cs" />
+    <Compile Include="Ennumeration\Anforderung\AFO_VERERBUNG.cs" />
+    <Compile Include="Ennumeration\Anforderung\AFO_WV_ART.cs" />
+    <Compile Include="Ennumeration\Anforderung\AFO_WV_NACHWEISART.cs" />
+    <Compile Include="Ennumeration\Anforderung\AFO_WV_PHASE.cs" />
+    <Compile Include="Ennumeration\Anforderung\IN_CATEGORY.cs" />
+    <Compile Include="Ennumeration\Anforderung\W_AKTIVITAET.cs" />
+    <Compile Include="Ennumeration\Stakeholder\ST_AKTEUR_TYP.cs" />
+    <Compile Include="Ennumeration\Stakeholder\ST_EINFLUSS.cs" />
+    <Compile Include="Ennumeration\Stakeholder\ST_GRUPPE.cs" />
+    <Compile Include="Ennumeration\Stakeholder\ST_INTERESSE.cs" />
+    <Compile Include="Ennumeration\Stakeholder\ST_WV_PHASE.cs" />
+    <Compile Include="Ennumeration\ST_ENUM.cs" />
+    <Compile Include="Ennumeration\Systemelement\SYS_ARTIKEL.cs" />
+    <Compile Include="Ennumeration\Systemelement\SYS_DETAILSTUFE.cs" />
+    <Compile Include="Ennumeration\Systemelement\SYS_ERFUELLT_AFO.cs" />
+    <Compile Include="Ennumeration\Systemelement\SYS_KOMPONENTENTYP.cs" />
+    <Compile Include="Ennumeration\Systemelement\SYS_PRODUKT_STATUS.cs" />
+    <Compile Include="Ennumeration\Systemelement\SYS_STATUS.cs" />
+    <Compile Include="Ennumeration\Systemelement\SYS_SUBORDINATES_AFO.cs" />
+    <Compile Include="Ennumeration\Systemelement\SYS_TYP.cs" />
+    <Compile Include="Ennumeration\SYS_ENUM.cs" />
+    <Compile Include="Forms\Metamodell\Choose_Metamodel_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Metamodell\Choose_Metamodel_Form.Designer.cs">
+      <DependentUpon>Choose_Metamodel_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\XAC\Choose_Require7_xac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\XAC\Choose_Require7_xac.Designer.cs">
+      <DependentUpon>Choose_Require7_xac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AFO_Erstellung\Functional_Decomposition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AFO_Erstellung\Functional_Decomposition.Designer.cs">
+      <DependentUpon>Functional_Decomposition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Misc\Loading_OpArch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Misc\Loading_OpArch.Designer.cs">
+      <DependentUpon>Loading_OpArch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AFO_Erstellung\Interface_Decomposition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AFO_Erstellung\Interface_Decomposition.Designer.cs">
+      <DependentUpon>Interface_Decomposition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repository_Elements\Catalogue.cs" />
+    <Compile Include="Repository_Elements\Diagram.cs" />
+    <Compile Include="Repository_Elements\Glossar_Element.cs" />
+    <Compile Include="Repository_Elements\Issue.cs" />
+    <Compile Include="Repository_Elements\Measurement.cs" />
+    <Compile Include="Repository_Elements\MeasurementType.cs" />
+    <Compile Include="Repository_Elements\Nachweisart.cs" />
+    <Compile Include="Repository_Elements\Package.cs" />
+    <Compile Include="Repository_Elements\Pool.cs" />
+    <Compile Include="Repository_Elements\Logical.cs" />
+    <Compile Include="Element\Element_Interface.cs" />
+    <Compile Include="Repository_Elements\InformationElement.cs" />
+    <Compile Include="Metamodel\Metamodel.cs" />
+    <Compile Include="Repository_Elements\NodeType.cs" />
+    <Compile Include="Repository_Elements\OperationalConstraint.cs" />
+    <Compile Include="Repository_Elements\Repository_Class.cs" />
+    <Compile Include="Repository_Elements\Repository_Connector.cs" />
+    <Compile Include="Repository_Elements\Repository_Connectors.cs" />
+    <Compile Include="Repository_Elements\Repository_Element.cs" />
+    <Compile Include="Repository_Elements\Repository_Elements.cs" />
+    <Compile Include="Repository_Elements\Repository_Plugin.cs" />
+    <Compile Include="Repository_Elements\SysElement.cs" />
+    <Compile Include="Export\Export_xml.cs" />
+    <Compile Include="Import\Import_xml.cs" />
+    <Compile Include="Requirement\Requirement.cs" />
+    <Compile Include="Requirement\Requirement_Functional.cs" />
+    <Compile Include="Requirement\Requirement_Interface.cs" />
+    <Compile Include="Repository_Elements\Stakeholder.cs" />
+    <Compile Include="Requirement\Requirement_Non_Functional.cs" />
+    <Compile Include="Requirement\Requirement_User.cs" />
+    <Compile Include="Database_Connection\DB_Command\DB_Command.cs" />
+    <Compile Include="Repository_Elements\TaggedValue.cs" />
+    <Compile Include="Element\Target.cs" />
+    <Compile Include="Element\Target_Functional.cs" />
+    <Compile Include="Element\Target_Stakeholder.cs" />
+    <Compile Include="XML\Sonderzeichen.cs" />
+    <Compile Include="XML\XML.cs" />
+    <Compile Include="Main\Database.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\AFO_Erstellung\Abfrage_Annahme_Aenderung.resx">
+      <DependentUpon>Abfrage_Annahme_Aenderung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AFO_Mgmt\Auswahl_AFO_Mgmt_Connectoren.resx">
+      <DependentUpon>Auswahl_AFO_Mgmt_Connectoren.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AFO_Mgmt\Auswahl_AFO_Mgmt_Replaces.resx">
+      <DependentUpon>Auswahl_AFO_Mgmt_Replaces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Analyse\Auswahl_Anwendungsfall.resx">
+      <DependentUpon>Auswahl_Anwendungsfall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Analyse\Auswahl_Systemelemente.resx">
+      <DependentUpon>Auswahl_Systemelemente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Analyse\Choose_Analyse_Patterns.resx">
+      <DependentUpon>Choose_Analyse_Patterns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bewertung\Bewertung_UI.resx">
+      <DependentUpon>Bewertung_UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Export_Auswahl\Auswahl_Catalogue.resx">
+      <DependentUpon>Auswahl_Catalogue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Misc\Optionen.resx">
+      <DependentUpon>Optionen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XAC\Choose_Export_Flat.resx">
+      <DependentUpon>Choose_Export_Flat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XAC\Choose_Import_Elements_To_Delete.resx">
+      <DependentUpon>Choose_Import_Elements_To_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AFO_Erstellung\Choose_Interface_Modus.resx">
+      <DependentUpon>Choose_Interface_Modus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Metamodell\Choose_Metamodel_Form.resx">
+      <DependentUpon>Choose_Metamodel_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XAC\Choose_Require7_xac.resx">
+      <DependentUpon>Choose_Require7_xac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XAC\Choose_Systemelement.resx">
+      <DependentUpon>Choose_Systemelement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Metamodell\Create_Metamodel.resx">
+      <DependentUpon>Create_Metamodel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Misc\DB_Auswahl.resx">
+      <DependentUpon>DB_Auswahl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Misc\DB_Auswahl_2.resx">
+      <DependentUpon>DB_Auswahl_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AFO_Erstellung\Form_Edit_Requirement.resx">
+      <DependentUpon>Form_Edit_Requirement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AFO_Erstellung\Functional_Decomposition.resx">
+      <DependentUpon>Functional_Decomposition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Misc\Loading_OpArch.resx">
+      <DependentUpon>Loading_OpArch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AFO_Erstellung\Interface_Decomposition.resx">
+      <DependentUpon>Interface_Decomposition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AFO_Erstellung\NonFunctional_Decomposition.resx">
+      <DependentUpon>NonFunctional_Decomposition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Metamodell\Synch_MM.resx">
+      <DependentUpon>Synch_MM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Database.datasource" />
+    <None Include="Properties\DataSources\Metamodel.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Require7\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Satzschablone_normal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Interop.EA">
+      <HintPath>..\..\..\..\..\Program Files\Sparx Systems\EA\Interop.EA.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Sqlite, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Sqlite.Core.3.1.32\lib\netstandard2.0\Microsoft.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2, Version=2.1.2.1721, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_e_sqlite3.2.1.2\lib\net461\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core, Version=2.1.2.1721, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.core.2.1.2\lib\netstandard2.0\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.dynamic_cdecl, Version=2.1.2.1721, Culture=neutral, PublicKeyToken=b68184102cba0b3b, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.provider.dynamic_cdecl.2.1.2\lib\netstandard2.0\SQLitePCLRaw.provider.dynamic_cdecl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
