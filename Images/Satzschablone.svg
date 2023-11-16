@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generiert durch Microsoft Visio, SVG Export Satzschablone.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="22.8858in" height="8.26772in"
+		viewBox="0 0 1647.78 595.276" xml:space="preserve" color-interpolation-filters="sRGB" class="st16">
+	<v:documentProperties v:langID="1031" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(1):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#73302a;stroke:#164326;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st2 {fill:#c05046;stroke:#164326;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st3 {fill:#997300;stroke:#164326;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st4 {fill:#ffc000;stroke:#164326;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st5 {fill:#164326;font-family:Calibri;font-size:1.5em;font-weight:bold}
+		.st6 {fill:#5e703a;stroke:#164326;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st7 {fill:#9dbb61;stroke:#164326;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st8 {fill:#5e703a;stroke:#164326;stroke-linecap:round;stroke-linejoin:round;stroke-width:4.5}
+		.st9 {fill:#9dbb61;stroke:#164326;stroke-linecap:round;stroke-linejoin:round;stroke-width:4.5}
+		.st10 {fill:#5e703a;stroke:#164326;stroke-dasharray:15.75,11.25;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
+		.st11 {fill:#9dbb61;stroke:#164326;stroke-dasharray:15.75,11.25;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25}
+		.st12 {font-size:1em}
+		.st13 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st14 {fill:#000000;font-family:Calibri;font-size:1.5em;font-weight:bold}
+		.st15 {fill:#e4e4e4;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st16 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Zeichenblatt-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="Verbinder" v:index="0"/>
+		<g id="group43-1" transform="translate(510.236,-191.339)" v:mID="43" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="ShadowColor" v:val="VT5(#84877b)"/>
+				<v:ud v:nameU="ShadowPercentage" v:val="VT0(0.6):26"/>
+				<v:ud v:nameU="ControlX" v:val="VT0(0.23622047244094):24"/>
+				<v:ud v:nameU="ControlY" v:val="VT0(0.23622047244094):24"/>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShadowColor" v:prompt="" v:val="VT5(#73302a)"/>
+			</v:userDefs>
+			<title>Rahmen</title>
+			<g id="shape44-2" v:mID="44" v:groupContext="shape">
+				<title>Tabelle.44</title>
+				<path d="M0 595.28 L198.43 595.28 L198.43 269.29 L206.93 277.8 L206.93 603.78 L198.43 595.28 L206.93 603.78 L8.5
+							 603.78 L0 595.28 Z" class="st1"/>
+			</g>
+			<g id="shape45-4" v:mID="45" v:groupContext="shape">
+				<title>Tabelle.45</title>
+				<path d="M17.01 578.27 L17.01 286.3 L181.42 286.3 L181.42 294.8 L25.51 294.8 L17.01 286.3 L25.51 294.8 L25.51 578.27
+							 L17.01 578.27 Z" class="st1"/>
+			</g>
+			<g id="shape46-6" v:mID="46" v:groupContext="shape">
+				<title>Tabelle.46</title>
+				<path d="M0 595.28 L198.43 595.28 L198.43 269.29 L0 269.29 L0 595.28 ZM17.01 578.27 L181.42 578.27 L181.42 286.3
+							 L17.01 286.3 L17.01 578.27 Z" class="st2"/>
+			</g>
+		</g>
+		<g id="group4-8" transform="translate(28.3465,-318.898)" v:mID="4" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="ShadowColor" v:val="VT5(#84877b)"/>
+				<v:ud v:nameU="ShadowPercentage" v:val="VT0(0.6):26"/>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShadowColor" v:prompt="" v:val="VT5(#997300)"/>
+			</v:userDefs>
+			<title>Quadratischer Block</title>
+			<desc>&#60;Bedingung&#62;</desc>
+			<g id="shape5-9" v:mID="5" v:groupContext="shape">
+				<title>Tabelle.5</title>
+				<path d="M0 595.28 L141.73 595.28 L141.73 524.41 L150.24 532.91 L150.24 603.78 L141.73 595.28 L150.24 603.78 L8.5
+							 603.78 L0 595.28 Z" class="st3"/>
+			</g>
+			<g id="shape6-11" v:mID="6" v:groupContext="shape">
+				<title>Tabelle.6</title>
+				<rect x="0" y="524.409" width="141.732" height="70.8661" class="st4"/>
+			</g>
+			<g id="shape4-13" v:mID="4" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="70.8661" cy="559.843" width="141.74" height="70.8661"/>
+				<text x="22.26" y="565.24" class="st5" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>&#60;Bedingung&#62;</text>			</g>
+		</g>
+		<g id="group7-15" transform="translate(191.339,-318.898)" v:mID="7" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="ShadowColor" v:val="VT5(#84877b)"/>
+				<v:ud v:nameU="ShadowPercentage" v:val="VT0(0.6):26"/>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShadowColor" v:prompt="" v:val="VT5(#5e703a)"/>
+			</v:userDefs>
+			<title>Quadratischer Block.7</title>
+			<desc>muss</desc>
+			<g id="shape8-16" v:mID="8" v:groupContext="shape">
+				<title>Tabelle.8</title>
+				<path d="M0 595.28 L126.14 595.28 L126.14 524.41 L134.65 532.91 L134.65 603.78 L126.14 595.28 L134.65 603.78 L8.5
+							 603.78 L0 595.28 Z" class="st6"/>
+			</g>
+			<g id="shape9-18" v:mID="9" v:groupContext="shape">
+				<title>Tabelle.9</title>
+				<rect x="0" y="524.409" width="126.142" height="70.8661" class="st7"/>
+			</g>
+			<g id="shape7-20" v:mID="7" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="63.0709" cy="559.843" width="126.15" height="70.8661"/>
+				<text x="43.74" y="565.24" class="st5" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>muss</text>			</g>
+		</g>
+		<g id="group10-22" transform="translate(338.74,-318.898)" v:mID="10" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="ShadowColor" v:val="VT5(#84877b)"/>
+				<v:ud v:nameU="ShadowPercentage" v:val="VT0(0.6):26"/>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShadowColor" v:prompt="" v:val="VT5(#5e703a)"/>
+			</v:userDefs>
+			<title>Quadratischer Block.10</title>
+			<desc>&#60;System&#62;</desc>
+			<g id="shape11-23" v:mID="11" v:groupContext="shape">
+				<title>Tabelle.11</title>
+				<path d="M0 595.28 L141.73 595.28 L141.73 524.41 L150.24 532.91 L150.24 603.78 L141.73 595.28 L150.24 603.78 L8.5
+							 603.78 L0 595.28 Z" class="st8"/>
+			</g>
+			<g id="shape12-25" v:mID="12" v:groupContext="shape">
+				<title>Tabelle.12</title>
+				<rect x="0" y="524.409" width="141.732" height="70.8661" class="st9"/>
+			</g>
+			<g id="shape10-27" v:mID="10" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="70.8661" cy="559.843" width="141.74" height="70.8661"/>
+				<text x="34.82" y="565.24" class="st5" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>&#60;System&#62;</text>			</g>
+		</g>
+		<g id="group13-29" transform="translate(538.583,-411.024)" v:mID="13" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="ShadowColor" v:val="VT5(#84877b)"/>
+				<v:ud v:nameU="ShadowPercentage" v:val="VT0(0.6):26"/>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShadowColor" v:prompt="" v:val="VT5(#5e703a)"/>
+			</v:userDefs>
+			<title>Quadratischer Block.13</title>
+			<desc>-</desc>
+			<g id="shape14-30" v:mID="14" v:groupContext="shape">
+				<title>Tabelle.14</title>
+				<path d="M0 595.28 L141.73 595.28 L141.73 524.41 L150.24 532.91 L150.24 603.78 L141.73 595.28 L150.24 603.78 L8.5
+							 603.78 L0 595.28 Z" class="st10"/>
+			</g>
+			<g id="shape15-32" v:mID="15" v:groupContext="shape">
+				<title>Tabelle.15</title>
+				<path d="M0 595.28 L141.73 595.28 L141.73 524.41 L0 524.41 L0 595.28 Z" class="st11"/>
+			</g>
+			<g id="shape13-34" v:mID="13" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="70.8661" cy="559.843" width="141.74" height="70.8661"/>
+				<text x="68.11" y="565.24" class="st5" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>-</text>			</g>
+		</g>
+		<g id="group28-36" transform="translate(538.583,-318.898)" v:mID="28" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="ShadowColor" v:val="VT5(#84877b)"/>
+				<v:ud v:nameU="ShadowPercentage" v:val="VT0(0.6):26"/>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShadowColor" v:prompt="" v:val="VT5(#5e703a)"/>
+			</v:userDefs>
+			<title>Quadratischer Block.28</title>
+			<desc>&#60;Akteur&#62; die Möglichkeit bieten</desc>
+			<g id="shape29-37" v:mID="29" v:groupContext="shape">
+				<title>Tabelle.29</title>
+				<path d="M0 595.28 L141.73 595.28 L141.73 524.41 L150.24 532.91 L150.24 603.78 L141.73 595.28 L150.24 603.78 L8.5
+							 603.78 L0 595.28 Z" class="st10"/>
+			</g>
+			<g id="shape30-39" v:mID="30" v:groupContext="shape">
+				<title>Tabelle.30</title>
+				<path d="M0 595.28 L141.73 595.28 L141.73 524.41 L0 524.41 L0 595.28 Z" class="st11"/>
+			</g>
+			<g id="shape28-41" v:mID="28" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="70.8661" cy="559.843" width="141.74" height="70.8661"/>
+				<text x="22.84" y="543.64" class="st5" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>&#60;Akteur&#62; die <tspan
+							x="26.7" dy="1.2em" class="st12">Möglichkeit </tspan><tspan x="46.81" dy="1.2em" class="st12">bieten</tspan></text>			</g>
+		</g>
+		<g id="group31-45" transform="translate(538.583,-226.772)" v:mID="31" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="ShadowColor" v:val="VT5(#84877b)"/>
+				<v:ud v:nameU="ShadowPercentage" v:val="VT0(0.6):26"/>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShadowColor" v:prompt="" v:val="VT5(#5e703a)"/>
+			</v:userDefs>
+			<title>Quadratischer Block.31</title>
+			<desc>fähig sein</desc>
+			<g id="shape32-46" v:mID="32" v:groupContext="shape">
+				<title>Tabelle.32</title>
+				<path d="M0 595.28 L141.73 595.28 L141.73 524.41 L150.24 532.91 L150.24 603.78 L141.73 595.28 L150.24 603.78 L8.5
+							 603.78 L0 595.28 Z" class="st10"/>
+			</g>
+			<g id="shape33-48" v:mID="33" v:groupContext="shape">
+				<title>Tabelle.33</title>
+				<path d="M0 595.28 L141.73 595.28 L141.73 524.41 L0 524.41 L0 595.28 Z" class="st11"/>
+			</g>
+			<g id="shape31-50" v:mID="31" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="70.8661" cy="559.843" width="141.74" height="70.8661"/>
+				<text x="35.07" y="565.24" class="st5" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>fähig sein</text>			</g>
+		</g>
+		<g id="group34-52" transform="translate(814.961,-318.898)" v:mID="34" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="ShadowColor" v:val="VT5(#84877b)"/>
+				<v:ud v:nameU="ShadowPercentage" v:val="VT0(0.6):26"/>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShadowColor" v:prompt="" v:val="VT5(#997300)"/>
+			</v:userDefs>
+			<title>Quadratischer Block.34</title>
+			<desc>&#60;Objekt&#62;</desc>
+			<g id="shape35-53" v:mID="35" v:groupContext="shape">
+				<title>Tabelle.35</title>
+				<path d="M0 595.28 L141.73 595.28 L141.73 524.41 L150.24 532.91 L150.24 603.78 L141.73 595.28 L150.24 603.78 L8.5
+							 603.78 L0 595.28 Z" class="st3"/>
+			</g>
+			<g id="shape36-55" v:mID="36" v:groupContext="shape">
+				<title>Tabelle.36</title>
+				<rect x="0" y="524.409" width="141.732" height="70.8661" class="st4"/>
+			</g>
+			<g id="shape34-57" v:mID="34" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="70.8661" cy="559.843" width="141.74" height="70.8661"/>
+				<text x="36.72" y="565.24" class="st5" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>&#60;Objekt&#62;</text>			</g>
+		</g>
+		<g id="group37-59" transform="translate(1140.94,-318.898)" v:mID="37" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="ShadowColor" v:val="VT5(#84877b)"/>
+				<v:ud v:nameU="ShadowPercentage" v:val="VT0(0.6):26"/>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShadowColor" v:prompt="" v:val="VT5(#5e703a)"/>
+			</v:userDefs>
+			<title>Quadratischer Block.37</title>
+			<desc>&#60;Prozesswort&#62;</desc>
+			<g id="shape38-60" v:mID="38" v:groupContext="shape">
+				<title>Tabelle.38</title>
+				<path d="M0 595.28 L141.73 595.28 L141.73 524.41 L150.24 532.91 L150.24 603.78 L141.73 595.28 L150.24 603.78 L8.5
+							 603.78 L0 595.28 Z" class="st8"/>
+			</g>
+			<g id="shape39-62" v:mID="39" v:groupContext="shape">
+				<title>Tabelle.39</title>
+				<rect x="0" y="524.409" width="141.732" height="70.8661" class="st9"/>
+			</g>
+			<g id="shape37-64" v:mID="37" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="70.8661" cy="559.843" width="141.74" height="70.8661"/>
+				<text x="15.92" y="565.24" class="st5" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>&#60;Prozesswort&#62;</text>			</g>
+		</g>
+		<g id="group40-66" transform="translate(977.953,-318.898)" v:mID="40" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="ShadowColor" v:val="VT5(#84877b)"/>
+				<v:ud v:nameU="ShadowPercentage" v:val="VT0(0.6):26"/>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShadowColor" v:prompt="" v:val="VT5(#997300)"/>
+			</v:userDefs>
+			<title>Quadratischer Block.40</title>
+			<desc>&#60;Qualität&#62;</desc>
+			<g id="shape41-67" v:mID="41" v:groupContext="shape">
+				<title>Tabelle.41</title>
+				<path d="M0 595.28 L141.73 595.28 L141.73 524.41 L150.24 532.91 L150.24 603.78 L141.73 595.28 L150.24 603.78 L8.5
+							 603.78 L0 595.28 Z" class="st3"/>
+			</g>
+			<g id="shape42-69" v:mID="42" v:groupContext="shape">
+				<title>Tabelle.42</title>
+				<rect x="0" y="524.409" width="141.732" height="70.8661" class="st4"/>
+			</g>
+			<g id="shape40-71" v:mID="40" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="70.8661" cy="559.843" width="141.74" height="70.8661"/>
+				<text x="31.35" y="565.24" class="st5" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>&#60;Qualität&#62;</text>			</g>
+		</g>
+		<g id="group47-73" transform="translate(666.142,-265.002)" v:mID="47" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="ControlDistFromCorner" v:prompt="" v:val="VT0(0.33406619583616):24"/>
+				<v:ud v:nameU="AngToControl" v:prompt="" v:val="VT0(0.78539816339745):32"/>
+				<v:ud v:nameU="XFoldLength" v:prompt="" v:val="VT0(0.23622047244094):24"/>
+				<v:ud v:nameU="YFoldLength" v:prompt="" v:val="VT0(0.23622047244094):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ControlDistFromCorner" v:prompt="" v:val="VT0(0.43344373488933):1"/>
+				<v:ud v:nameU="AngToControl" v:prompt="" v:val="VT0(1.1392232755714):32"/>
+				<v:ud v:nameU="XFoldLength" v:prompt="" v:val="VT0(0.23859930856981):1"/>
+				<v:ud v:nameU="YFoldLength" v:prompt="" v:val="VT0(0.51810135575159):1"/>
+			</v:userDefs>
+			<title>Gefaltete Ecke</title>
+			<desc>Schnittstelle</desc>
+			<g id="shape47-74" v:mID="47" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+				<v:textRect cx="70.8661" cy="562.64" width="141.74" height="65.2714"/>
+				<path d="M0 595.28 L124.55 595.28 L141.73 557.97 L141.73 530 L0 530 L0 595.28 Z" class="st13"/>
+				<text x="24.54" y="550.2" class="st14" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>Schnittstelle</text>			</g>
+			<g id="shape48-77" v:mID="48" v:groupContext="shape" transform="translate(113.386,0)">
+				<title>Tabelle.48</title>
+				<v:userDefs>
+					<v:ud v:nameU="ControlX" v:prompt="" v:val="VT0(0.94488188976378):24"/>
+					<v:ud v:nameU="ControlY" v:prompt="" v:val="VT0(0.23622047244094):24"/>
+					<v:ud v:nameU="XFoldLength" v:prompt="" v:val="VT0(0.23622047244094):24"/>
+					<v:ud v:nameU="YFoldLength" v:prompt="" v:val="VT0(0.23622047244094):24"/>
+					<v:ud v:nameU="FillForegnd" v:prompt="" v:val="VT0(1):26"/>
+					<v:ud v:nameU="ControlX" v:prompt="" v:val="VT0(1.5748031496063):1"/>
+					<v:ud v:nameU="ControlY" v:prompt="" v:val="VT0(0.18130957314546):1"/>
+					<v:ud v:nameU="XFoldLength" v:prompt="" v:val="VT0(0.23859930856981):1"/>
+					<v:ud v:nameU="YFoldLength" v:prompt="" v:val="VT0(0.51810135575159):1"/>
+				</v:userDefs>
+				<path d="M11.17 595.28 L28.35 557.97 L0 582.22 L11.17 595.28 Z" class="st15"/>
+			</g>
+		</g>
+		<g id="group49-79" transform="translate(666.142,-364.215)" v:mID="49" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="ControlDistFromCorner" v:prompt="" v:val="VT0(0.33406619583616):24"/>
+				<v:ud v:nameU="AngToControl" v:prompt="" v:val="VT0(0.78539816339745):32"/>
+				<v:ud v:nameU="XFoldLength" v:prompt="" v:val="VT0(0.23622047244094):24"/>
+				<v:ud v:nameU="YFoldLength" v:prompt="" v:val="VT0(0.23622047244094):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ControlDistFromCorner" v:prompt="" v:val="VT0(0.43344373488933):1"/>
+				<v:ud v:nameU="AngToControl" v:prompt="" v:val="VT0(1.1392232755714):32"/>
+				<v:ud v:nameU="XFoldLength" v:prompt="" v:val="VT0(0.23859930856981):1"/>
+				<v:ud v:nameU="YFoldLength" v:prompt="" v:val="VT0(0.51810135575159):1"/>
+			</v:userDefs>
+			<title>Gefaltete Ecke.49</title>
+			<desc>Nutzer-System-Interaktion</desc>
+			<g id="shape49-80" v:mID="49" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+				<v:textRect cx="70.8661" cy="562.64" width="141.74" height="65.2714"/>
+				<path d="M0 595.28 L124.55 595.28 L141.73 557.97 L141.73 530 L0 530 L0 595.28 Z" class="st13"/>
+				<text x="13.09" y="550.2" class="st14" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>Nutzer-System-<tspan
+							x="29.03" dy="1.2em" class="st12">Interaktion</tspan></text>			</g>
+			<g id="shape50-84" v:mID="50" v:groupContext="shape" transform="translate(113.386,0)">
+				<title>Tabelle.50</title>
+				<v:userDefs>
+					<v:ud v:nameU="ControlX" v:prompt="" v:val="VT0(0.94488188976378):24"/>
+					<v:ud v:nameU="ControlY" v:prompt="" v:val="VT0(0.23622047244094):24"/>
+					<v:ud v:nameU="XFoldLength" v:prompt="" v:val="VT0(0.23622047244094):24"/>
+					<v:ud v:nameU="YFoldLength" v:prompt="" v:val="VT0(0.23622047244094):24"/>
+					<v:ud v:nameU="FillForegnd" v:prompt="" v:val="VT0(1):26"/>
+					<v:ud v:nameU="ControlX" v:prompt="" v:val="VT0(1.5748031496063):1"/>
+					<v:ud v:nameU="ControlY" v:prompt="" v:val="VT0(0.18130957314546):1"/>
+					<v:ud v:nameU="XFoldLength" v:prompt="" v:val="VT0(0.23859930856981):1"/>
+					<v:ud v:nameU="YFoldLength" v:prompt="" v:val="VT0(0.51810135575159):1"/>
+				</v:userDefs>
+				<path d="M11.17 595.28 L28.35 557.97 L0 582.22 L11.17 595.28 Z" class="st15"/>
+			</g>
+		</g>
+		<g id="group51-86" transform="translate(666.142,-453.543)" v:mID="51" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="ControlDistFromCorner" v:prompt="" v:val="VT0(0.33406619583616):24"/>
+				<v:ud v:nameU="AngToControl" v:prompt="" v:val="VT0(0.78539816339745):32"/>
+				<v:ud v:nameU="XFoldLength" v:prompt="" v:val="VT0(0.23622047244094):24"/>
+				<v:ud v:nameU="YFoldLength" v:prompt="" v:val="VT0(0.23622047244094):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ControlDistFromCorner" v:prompt="" v:val="VT0(0.43344373488933):1"/>
+				<v:ud v:nameU="AngToControl" v:prompt="" v:val="VT0(1.1392232755714):32"/>
+				<v:ud v:nameU="XFoldLength" v:prompt="" v:val="VT0(0.23859930856981):1"/>
+				<v:ud v:nameU="YFoldLength" v:prompt="" v:val="VT0(0.51810135575159):1"/>
+			</v:userDefs>
+			<title>Gefaltete Ecke.51</title>
+			<desc>Funktionaler Aspekt</desc>
+			<g id="shape51-87" v:mID="51" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+				<v:textRect cx="70.8661" cy="562.64" width="141.74" height="65.2714"/>
+				<path d="M0 595.28 L124.55 595.28 L141.73 557.97 L141.73 530 L0 530 L0 595.28 Z" class="st13"/>
+				<text x="23.37" y="550.2" class="st14" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>Funktionaler <tspan
+							x="45.02" dy="1.2em" class="st12">Aspekt</tspan></text>			</g>
+			<g id="shape52-91" v:mID="52" v:groupContext="shape" transform="translate(113.386,0)">
+				<title>Tabelle.52</title>
+				<v:userDefs>
+					<v:ud v:nameU="ControlX" v:prompt="" v:val="VT0(0.94488188976378):24"/>
+					<v:ud v:nameU="ControlY" v:prompt="" v:val="VT0(0.23622047244094):24"/>
+					<v:ud v:nameU="XFoldLength" v:prompt="" v:val="VT0(0.23622047244094):24"/>
+					<v:ud v:nameU="YFoldLength" v:prompt="" v:val="VT0(0.23622047244094):24"/>
+					<v:ud v:nameU="FillForegnd" v:prompt="" v:val="VT0(1):26"/>
+					<v:ud v:nameU="ControlX" v:prompt="" v:val="VT0(1.5748031496063):1"/>
+					<v:ud v:nameU="ControlY" v:prompt="" v:val="VT0(0.18130957314546):1"/>
+					<v:ud v:nameU="XFoldLength" v:prompt="" v:val="VT0(0.23859930856981):1"/>
+					<v:ud v:nameU="YFoldLength" v:prompt="" v:val="VT0(0.51810135575159):1"/>
+				</v:userDefs>
+				<path d="M11.17 595.28 L28.35 557.97 L0 582.22 L11.17 595.28 Z" class="st15"/>
+			</g>
+		</g>
+		<g id="shape54-93" v:mID="54" v:groupContext="shape" v:layerMember="0" transform="translate(647.717,-290.551)">
+			<title>Dynamischer Verbinder</title>
+		</g>
+	</g>
+</svg>

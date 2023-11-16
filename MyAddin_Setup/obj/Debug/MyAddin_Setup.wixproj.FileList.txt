@@ -1,0 +1,16 @@
+D:\Prog\Requ_Addin\Dekomposition\ClassLibrary1\MyAddin_Setup\bin\Debug\cab1.cab
+D:\Prog\Requ_Addin\Dekomposition\ClassLibrary1\MyAddin_Setup\bin\Debug\MyAddin_Setup.msi
+D:\Prog\Requ_Addin\Dekomposition\ClassLibrary1\MyAddin_Setup\bin\Debug\MyAddin_Setup.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\MyAddin_Setup.wixproj.BindContentsFileListnull.txt
+obj\Debug\MyAddin_Setup.wixproj.BindOutputsFileListnull.txt
+obj\Debug\MyAddin_Setup.wixproj.BindBuiltOutputsFileListnull.txt
+C:\Users\Yannick\Desktop\cab1.cab
+C:\Users\Yannick\Desktop\Requirement_Plugin_Setup.msi
+C:\Users\Yannick\Desktop\Requirement_Plugin_Setup.wixpdb
+C:\Users\yanni\Desktop\RPI_Installer\cab1.cab
+C:\Users\yanni\Desktop\RPI_Installer\Requirement_Plugin_Setup.msi
+C:\Users\yanni\Desktop\RPI_Installer\Requirement_Plugin_Setup.wixpdb
+C:\Users\yanni\Desktop\RPI\RPI_Installer\cab1.cab
+C:\Users\yanni\Desktop\RPI\RPI_Installer\Requirement_Plugin_Setup.msi
+C:\Users\yanni\Desktop\RPI\RPI_Installer\Requirement_Plugin_Setup.wixpdb

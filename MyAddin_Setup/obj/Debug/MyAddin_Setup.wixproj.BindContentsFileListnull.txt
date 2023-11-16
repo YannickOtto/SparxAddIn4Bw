@@ -1,0 +1,2 @@
+C:\Prog\Requ_Addin\RPI_V2\RPI_Sourcecode\bin\Debug\Requirement_Plugin.dll
+C:\Prog\Requ_Addin\RPI_V2\RPI_Sourcecode\Images\Satzschablone_normal.jpg

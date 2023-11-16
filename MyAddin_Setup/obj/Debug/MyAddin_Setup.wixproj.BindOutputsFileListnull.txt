@@ -1,0 +1,3 @@
+C:\Users\yanni\Desktop\RPI\RPI_Installer\cab1.cab
+C:\Users\yanni\Desktop\RPI\RPI_Installer\Requirement_Plugin_Setup.msi
+C:\Users\yanni\Desktop\RPI\RPI_Installer\Requirement_Plugin_Setup.wixpdb

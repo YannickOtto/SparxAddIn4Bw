@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?define Requirement_Plugin_TargetDir=$(var.Requirement_Plugin.TargetDir)?>
+	<Product Id="15B5F1E7-70D6-4D31-995D-C1AD8295F592" Name="Requirement_Plugin_Sparx14" 
+           Language="1033" 
+           Version="1.4.6.0" 
+           Manufacturer="Yannick Otto" 
+           UpgradeCode="affecf80-9cf4-4ad1-b2e6-7cb8734ce5ae">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+    <Feature Id="ProductFeature" Title="Requirement_Plugin_Sparx14_Setup" Level="1">
+			<ComponentRef Id="ProductComponents" />
+      <ComponentRef Id="ProductComponentsRegEntries" />
+      <ComponentGroupRef Id="Product_Images" />
+    </Feature>
+
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="EA_Addins">
+          <Directory Id="IMAGES" Name="Images" />
+        </Directory>
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<Component Id="ProductComponents" Directory="INSTALLFOLDER" Guid="7E43BBD6-B167-495D-B3A5-3F2438377BD4">
+      <Class Id="{057581A8-A55D-3B22-9537-51C132020218}" Context="InprocServer32" Description="Requirement_Plugin.Requirement" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.Requirement" Description="Requirement_Plugin.Requirement" />
+                </Class>
+                <Class Id="{0679EB43-BE1C-3979-A099-0C1B6134FBB0}" Context="InprocServer32" Description="Requirement_Plugin.Stakeholder" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.Stakeholder" Description="Requirement_Plugin.Stakeholder" />
+                </Class>
+                <Class Id="{11D98D43-355A-32FB-8624-DB029568FFE8}" Context="InprocServer32" Description="Requirement_Plugin.Requirement_PluginClass" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.Requirement_PluginClass" Description="Requirement_Plugin.Requirement_PluginClass" />
+                </Class>
+                <Class Id="{2A772EAE-2B92-30B8-8FCE-C61003F28ECD}" Context="InprocServer32" Description="Requirement_Plugin.TaggedValue" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.TaggedValue" Description="Requirement_Plugin.TaggedValue" />
+                </Class>
+                <Class Id="{33EBDA09-199A-33AE-873F-3E567A9911FF}" Context="InprocServer32" Description="Requirement_Plugin.XML" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.XML" Description="Requirement_Plugin.XML" />
+                </Class>
+                <Class Id="{35BFEA5F-C9DC-348E-8EE7-5548667EA042}" Context="InprocServer32" Description="Requirement_Plugin.Metamodel" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.Metamodel" Description="Requirement_Plugin.Metamodel" />
+                </Class>
+                <Class Id="{38A4C7C5-B938-340D-9687-F9DA096E21E6}" Context="InprocServer32" Description="Requirement_Plugin.Repository_Element" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.Repository_Element" Description="Requirement_Plugin.Repository_Element" />
+                </Class>
+                <Class Id="{404E0A84-12D3-3D33-B1DC-A0489855D3CB}" Context="InprocServer32" Description="Requirement_Plugin.Target_Stakeholder" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.Target_Stakeholder" Description="Requirement_Plugin.Target_Stakeholder" />
+                </Class>
+                <Class Id="{411EA546-AEA7-3896-B046-8FE861FEB16F}" Context="InprocServer32" Description="Requirement_Plugin.Repository_Connector" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.Repository_Connector" Description="Requirement_Plugin.Repository_Connector" />
+                </Class>
+                <Class Id="{46764004-865C-34A4-9344-4BE1CF749E82}" Context="InprocServer32" Description="Requirement_Plugin.Loading_OpArch" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.Loading_OpArch" Description="Requirement_Plugin.Loading_OpArch" />
+                </Class>
+                <Class Id="{8B1D0989-7D3E-3F52-A622-C90F49029004}" Context="InprocServer32" Description="Requirement_Plugin.SYS_ENUM" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.SYS_ENUM" Description="Requirement_Plugin.SYS_ENUM" />
+                </Class>
+                <Class Id="{92E4F29C-925D-3822-94E9-3E364B49565D}" Context="InprocServer32" Description="Requirement_Plugin.Repository_Plugin" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.Repository_Plugin" Description="Requirement_Plugin.Repository_Plugin" />
+                </Class>
+                <Class Id="{A3403CA3-FB46-3CB0-89AE-BAD527D89F54}" Context="InprocServer32" Description="Requirement_Plugin.Element_User" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.Element_User" Description="Requirement_Plugin.Element_User" />
+                </Class>
+                <Class Id="{C73BC02A-51F8-33A6-8589-BAE520065122}" Context="InprocServer32" Description="Requirement_Plugin.Repository_Elements" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.Repository_Elements" Description="Requirement_Plugin.Repository_Elements" />
+                </Class>
+                <Class Id="{C7C53E89-CDD4-3D73-B65D-18EBAC37E158}" Context="InprocServer32" Description="Requirement_Plugin.Repository_Connectors" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.Repository_Connectors" Description="Requirement_Plugin.Repository_Connectors" />
+                </Class>
+                <Class Id="{E3C76016-884E-34E0-A821-1DB12EFBA3F1}" Context="InprocServer32" Description="Requirement_Plugin.Target_Functional" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.Target_Functional" Description="Requirement_Plugin.Target_Functional" />
+                </Class>
+                <Class Id="{E6765F92-837B-39D3-B94B-DBF52E84A963}" Context="InprocServer32" Description="Requirement_Plugin.Element_Functional" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.Element_Functional" Description="Requirement_Plugin.Element_Functional" />
+                </Class>
+                <Class Id="{F64EEF6B-4A20-34F6-AE93-60CBCA66E998}" Context="InprocServer32" Description="Requirement_Plugin.ST_ENUM" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.ST_ENUM" Description="Requirement_Plugin.ST_ENUM" />
+                </Class>
+                <Class Id="{FEC8916C-9958-3244-BB4C-E7D096CFE3A2}" Context="InprocServer32" Description="Requirement_Plugin.AFO_ENUM" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="Requirement_Plugin.AFO_ENUM" Description="Requirement_Plugin.AFO_ENUM" />
+                </Class>
+                <File Id="fil7E88128EC402AABA97D95521FE4512C6" KeyPath="yes" Source="C:\Prog\Requ_Addin\RPI_V2\RPI_Sourcecode\bin\Debug\Requirement_Plugin.dll" />
+                <RegistryValue Root="HKCR" Key="CLSID\{057581A8-A55D-3B22-9537-51C132020218}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{057581A8-A55D-3B22-9537-51C132020218}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.Requirement" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{057581A8-A55D-3B22-9537-51C132020218}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{057581A8-A55D-3B22-9537-51C132020218}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{057581A8-A55D-3B22-9537-51C132020218}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{057581A8-A55D-3B22-9537-51C132020218}\InprocServer32" Name="Class" Value="Requirement_Plugin.Requirement" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{057581A8-A55D-3B22-9537-51C132020218}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{057581A8-A55D-3B22-9537-51C132020218}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{057581A8-A55D-3B22-9537-51C132020218}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0679EB43-BE1C-3979-A099-0C1B6134FBB0}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0679EB43-BE1C-3979-A099-0C1B6134FBB0}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.Stakeholder" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0679EB43-BE1C-3979-A099-0C1B6134FBB0}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0679EB43-BE1C-3979-A099-0C1B6134FBB0}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0679EB43-BE1C-3979-A099-0C1B6134FBB0}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0679EB43-BE1C-3979-A099-0C1B6134FBB0}\InprocServer32" Name="Class" Value="Requirement_Plugin.Stakeholder" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0679EB43-BE1C-3979-A099-0C1B6134FBB0}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0679EB43-BE1C-3979-A099-0C1B6134FBB0}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{0679EB43-BE1C-3979-A099-0C1B6134FBB0}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{11D98D43-355A-32FB-8624-DB029568FFE8}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{11D98D43-355A-32FB-8624-DB029568FFE8}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.Requirement_PluginClass" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{11D98D43-355A-32FB-8624-DB029568FFE8}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{11D98D43-355A-32FB-8624-DB029568FFE8}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{11D98D43-355A-32FB-8624-DB029568FFE8}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{11D98D43-355A-32FB-8624-DB029568FFE8}\InprocServer32" Name="Class" Value="Requirement_Plugin.Requirement_PluginClass" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{11D98D43-355A-32FB-8624-DB029568FFE8}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{11D98D43-355A-32FB-8624-DB029568FFE8}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{11D98D43-355A-32FB-8624-DB029568FFE8}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2A772EAE-2B92-30B8-8FCE-C61003F28ECD}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2A772EAE-2B92-30B8-8FCE-C61003F28ECD}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.TaggedValue" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2A772EAE-2B92-30B8-8FCE-C61003F28ECD}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2A772EAE-2B92-30B8-8FCE-C61003F28ECD}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2A772EAE-2B92-30B8-8FCE-C61003F28ECD}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2A772EAE-2B92-30B8-8FCE-C61003F28ECD}\InprocServer32" Name="Class" Value="Requirement_Plugin.TaggedValue" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2A772EAE-2B92-30B8-8FCE-C61003F28ECD}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2A772EAE-2B92-30B8-8FCE-C61003F28ECD}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2A772EAE-2B92-30B8-8FCE-C61003F28ECD}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{33EBDA09-199A-33AE-873F-3E567A9911FF}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{33EBDA09-199A-33AE-873F-3E567A9911FF}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.XML" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{33EBDA09-199A-33AE-873F-3E567A9911FF}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{33EBDA09-199A-33AE-873F-3E567A9911FF}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{33EBDA09-199A-33AE-873F-3E567A9911FF}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{33EBDA09-199A-33AE-873F-3E567A9911FF}\InprocServer32" Name="Class" Value="Requirement_Plugin.XML" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{33EBDA09-199A-33AE-873F-3E567A9911FF}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{33EBDA09-199A-33AE-873F-3E567A9911FF}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{33EBDA09-199A-33AE-873F-3E567A9911FF}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{35BFEA5F-C9DC-348E-8EE7-5548667EA042}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{35BFEA5F-C9DC-348E-8EE7-5548667EA042}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.Metamodel" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{35BFEA5F-C9DC-348E-8EE7-5548667EA042}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{35BFEA5F-C9DC-348E-8EE7-5548667EA042}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{35BFEA5F-C9DC-348E-8EE7-5548667EA042}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{35BFEA5F-C9DC-348E-8EE7-5548667EA042}\InprocServer32" Name="Class" Value="Requirement_Plugin.Metamodel" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{35BFEA5F-C9DC-348E-8EE7-5548667EA042}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{35BFEA5F-C9DC-348E-8EE7-5548667EA042}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{35BFEA5F-C9DC-348E-8EE7-5548667EA042}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{38A4C7C5-B938-340D-9687-F9DA096E21E6}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{38A4C7C5-B938-340D-9687-F9DA096E21E6}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.Repository_Element" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{38A4C7C5-B938-340D-9687-F9DA096E21E6}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{38A4C7C5-B938-340D-9687-F9DA096E21E6}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{38A4C7C5-B938-340D-9687-F9DA096E21E6}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{38A4C7C5-B938-340D-9687-F9DA096E21E6}\InprocServer32" Name="Class" Value="Requirement_Plugin.Repository_Element" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{38A4C7C5-B938-340D-9687-F9DA096E21E6}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{38A4C7C5-B938-340D-9687-F9DA096E21E6}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{38A4C7C5-B938-340D-9687-F9DA096E21E6}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{404E0A84-12D3-3D33-B1DC-A0489855D3CB}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{404E0A84-12D3-3D33-B1DC-A0489855D3CB}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.Target_Stakeholder" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{404E0A84-12D3-3D33-B1DC-A0489855D3CB}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{404E0A84-12D3-3D33-B1DC-A0489855D3CB}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{404E0A84-12D3-3D33-B1DC-A0489855D3CB}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{404E0A84-12D3-3D33-B1DC-A0489855D3CB}\InprocServer32" Name="Class" Value="Requirement_Plugin.Target_Stakeholder" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{404E0A84-12D3-3D33-B1DC-A0489855D3CB}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{404E0A84-12D3-3D33-B1DC-A0489855D3CB}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{404E0A84-12D3-3D33-B1DC-A0489855D3CB}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{411EA546-AEA7-3896-B046-8FE861FEB16F}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{411EA546-AEA7-3896-B046-8FE861FEB16F}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.Repository_Connector" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{411EA546-AEA7-3896-B046-8FE861FEB16F}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{411EA546-AEA7-3896-B046-8FE861FEB16F}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{411EA546-AEA7-3896-B046-8FE861FEB16F}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{411EA546-AEA7-3896-B046-8FE861FEB16F}\InprocServer32" Name="Class" Value="Requirement_Plugin.Repository_Connector" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{411EA546-AEA7-3896-B046-8FE861FEB16F}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{411EA546-AEA7-3896-B046-8FE861FEB16F}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{411EA546-AEA7-3896-B046-8FE861FEB16F}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{46764004-865C-34A4-9344-4BE1CF749E82}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{46764004-865C-34A4-9344-4BE1CF749E82}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.Loading_OpArch" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{46764004-865C-34A4-9344-4BE1CF749E82}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{46764004-865C-34A4-9344-4BE1CF749E82}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{46764004-865C-34A4-9344-4BE1CF749E82}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{46764004-865C-34A4-9344-4BE1CF749E82}\InprocServer32" Name="Class" Value="Requirement_Plugin.Loading_OpArch" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{46764004-865C-34A4-9344-4BE1CF749E82}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{46764004-865C-34A4-9344-4BE1CF749E82}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{46764004-865C-34A4-9344-4BE1CF749E82}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{8B1D0989-7D3E-3F52-A622-C90F49029004}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{8B1D0989-7D3E-3F52-A622-C90F49029004}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.SYS_ENUM" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{8B1D0989-7D3E-3F52-A622-C90F49029004}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{8B1D0989-7D3E-3F52-A622-C90F49029004}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{8B1D0989-7D3E-3F52-A622-C90F49029004}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{8B1D0989-7D3E-3F52-A622-C90F49029004}\InprocServer32" Name="Class" Value="Requirement_Plugin.SYS_ENUM" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{8B1D0989-7D3E-3F52-A622-C90F49029004}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{8B1D0989-7D3E-3F52-A622-C90F49029004}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{8B1D0989-7D3E-3F52-A622-C90F49029004}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{92E4F29C-925D-3822-94E9-3E364B49565D}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{92E4F29C-925D-3822-94E9-3E364B49565D}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.Repository_Plugin" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{92E4F29C-925D-3822-94E9-3E364B49565D}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{92E4F29C-925D-3822-94E9-3E364B49565D}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{92E4F29C-925D-3822-94E9-3E364B49565D}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{92E4F29C-925D-3822-94E9-3E364B49565D}\InprocServer32" Name="Class" Value="Requirement_Plugin.Repository_Plugin" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{92E4F29C-925D-3822-94E9-3E364B49565D}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{92E4F29C-925D-3822-94E9-3E364B49565D}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{92E4F29C-925D-3822-94E9-3E364B49565D}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A3403CA3-FB46-3CB0-89AE-BAD527D89F54}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A3403CA3-FB46-3CB0-89AE-BAD527D89F54}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.Element_User" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A3403CA3-FB46-3CB0-89AE-BAD527D89F54}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A3403CA3-FB46-3CB0-89AE-BAD527D89F54}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A3403CA3-FB46-3CB0-89AE-BAD527D89F54}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A3403CA3-FB46-3CB0-89AE-BAD527D89F54}\InprocServer32" Name="Class" Value="Requirement_Plugin.Element_User" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A3403CA3-FB46-3CB0-89AE-BAD527D89F54}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A3403CA3-FB46-3CB0-89AE-BAD527D89F54}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A3403CA3-FB46-3CB0-89AE-BAD527D89F54}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C73BC02A-51F8-33A6-8589-BAE520065122}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C73BC02A-51F8-33A6-8589-BAE520065122}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.Repository_Elements" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C73BC02A-51F8-33A6-8589-BAE520065122}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C73BC02A-51F8-33A6-8589-BAE520065122}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C73BC02A-51F8-33A6-8589-BAE520065122}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C73BC02A-51F8-33A6-8589-BAE520065122}\InprocServer32" Name="Class" Value="Requirement_Plugin.Repository_Elements" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C73BC02A-51F8-33A6-8589-BAE520065122}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C73BC02A-51F8-33A6-8589-BAE520065122}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C73BC02A-51F8-33A6-8589-BAE520065122}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C7C53E89-CDD4-3D73-B65D-18EBAC37E158}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C7C53E89-CDD4-3D73-B65D-18EBAC37E158}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.Repository_Connectors" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C7C53E89-CDD4-3D73-B65D-18EBAC37E158}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C7C53E89-CDD4-3D73-B65D-18EBAC37E158}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C7C53E89-CDD4-3D73-B65D-18EBAC37E158}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C7C53E89-CDD4-3D73-B65D-18EBAC37E158}\InprocServer32" Name="Class" Value="Requirement_Plugin.Repository_Connectors" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C7C53E89-CDD4-3D73-B65D-18EBAC37E158}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C7C53E89-CDD4-3D73-B65D-18EBAC37E158}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{C7C53E89-CDD4-3D73-B65D-18EBAC37E158}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E3C76016-884E-34E0-A821-1DB12EFBA3F1}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E3C76016-884E-34E0-A821-1DB12EFBA3F1}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.Target_Functional" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E3C76016-884E-34E0-A821-1DB12EFBA3F1}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E3C76016-884E-34E0-A821-1DB12EFBA3F1}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E3C76016-884E-34E0-A821-1DB12EFBA3F1}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E3C76016-884E-34E0-A821-1DB12EFBA3F1}\InprocServer32" Name="Class" Value="Requirement_Plugin.Target_Functional" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E3C76016-884E-34E0-A821-1DB12EFBA3F1}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E3C76016-884E-34E0-A821-1DB12EFBA3F1}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E3C76016-884E-34E0-A821-1DB12EFBA3F1}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E6765F92-837B-39D3-B94B-DBF52E84A963}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E6765F92-837B-39D3-B94B-DBF52E84A963}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.Element_Functional" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E6765F92-837B-39D3-B94B-DBF52E84A963}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E6765F92-837B-39D3-B94B-DBF52E84A963}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E6765F92-837B-39D3-B94B-DBF52E84A963}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E6765F92-837B-39D3-B94B-DBF52E84A963}\InprocServer32" Name="Class" Value="Requirement_Plugin.Element_Functional" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E6765F92-837B-39D3-B94B-DBF52E84A963}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E6765F92-837B-39D3-B94B-DBF52E84A963}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E6765F92-837B-39D3-B94B-DBF52E84A963}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F64EEF6B-4A20-34F6-AE93-60CBCA66E998}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F64EEF6B-4A20-34F6-AE93-60CBCA66E998}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.ST_ENUM" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F64EEF6B-4A20-34F6-AE93-60CBCA66E998}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F64EEF6B-4A20-34F6-AE93-60CBCA66E998}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F64EEF6B-4A20-34F6-AE93-60CBCA66E998}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F64EEF6B-4A20-34F6-AE93-60CBCA66E998}\InprocServer32" Name="Class" Value="Requirement_Plugin.ST_ENUM" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F64EEF6B-4A20-34F6-AE93-60CBCA66E998}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F64EEF6B-4A20-34F6-AE93-60CBCA66E998}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F64EEF6B-4A20-34F6-AE93-60CBCA66E998}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FEC8916C-9958-3244-BB4C-E7D096CFE3A2}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FEC8916C-9958-3244-BB4C-E7D096CFE3A2}\InprocServer32\1.0.0.0" Name="Class" Value="Requirement_Plugin.AFO_ENUM" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FEC8916C-9958-3244-BB4C-E7D096CFE3A2}\InprocServer32\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FEC8916C-9958-3244-BB4C-E7D096CFE3A2}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FEC8916C-9958-3244-BB4C-E7D096CFE3A2}\InprocServer32\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FEC8916C-9958-3244-BB4C-E7D096CFE3A2}\InprocServer32" Name="Class" Value="Requirement_Plugin.AFO_ENUM" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FEC8916C-9958-3244-BB4C-E7D096CFE3A2}\InprocServer32" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FEC8916C-9958-3244-BB4C-E7D096CFE3A2}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FEC8916C-9958-3244-BB4C-E7D096CFE3A2}\InprocServer32" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{07AE9A90-8B86-3AA9-9DC7-80F65ADDD6F7}\1.0.0.0" Name="Class" Value="Requirement_Plugin.SYS_KOMPONENTENTYP" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{07AE9A90-8B86-3AA9-9DC7-80F65ADDD6F7}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{07AE9A90-8B86-3AA9-9DC7-80F65ADDD6F7}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{07AE9A90-8B86-3AA9-9DC7-80F65ADDD6F7}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{18357F1C-AEFD-32ED-BB35-680FCA9B11B1}\1.0.0.0" Name="Class" Value="Requirement_Plugin.AFO_DETAILSTUFE" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{18357F1C-AEFD-32ED-BB35-680FCA9B11B1}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{18357F1C-AEFD-32ED-BB35-680FCA9B11B1}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{18357F1C-AEFD-32ED-BB35-680FCA9B11B1}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{1F279F87-D52C-3085-99CD-574CF605D565}\1.0.0.0" Name="Class" Value="Requirement_Plugin.AFO_CPM_PHASE" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{1F279F87-D52C-3085-99CD-574CF605D565}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{1F279F87-D52C-3085-99CD-574CF605D565}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{1F279F87-D52C-3085-99CD-574CF605D565}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{33D4A682-8F01-34F8-BC60-7852A3D70D05}\1.0.0.0" Name="Class" Value="Requirement_Plugin.SYS_TYP" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{33D4A682-8F01-34F8-BC60-7852A3D70D05}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{33D4A682-8F01-34F8-BC60-7852A3D70D05}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{33D4A682-8F01-34F8-BC60-7852A3D70D05}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{3BDC9748-58F0-3D28-A662-F4B9ED353CB4}\1.0.0.0" Name="Class" Value="Requirement_Plugin.ST_EINFLUSS" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{3BDC9748-58F0-3D28-A662-F4B9ED353CB4}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{3BDC9748-58F0-3D28-A662-F4B9ED353CB4}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{3BDC9748-58F0-3D28-A662-F4B9ED353CB4}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{3C353820-F772-32DF-ABFB-089AADEDF10E}\1.0.0.0" Name="Class" Value="Requirement_Plugin.SYS_STATUS" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{3C353820-F772-32DF-ABFB-089AADEDF10E}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{3C353820-F772-32DF-ABFB-089AADEDF10E}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{3C353820-F772-32DF-ABFB-089AADEDF10E}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{400E4A30-867E-3A85-92D1-528A7B7B2502}\1.0.0.0" Name="Class" Value="Requirement_Plugin.SYS_PRODUKT_STATUS" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{400E4A30-867E-3A85-92D1-528A7B7B2502}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{400E4A30-867E-3A85-92D1-528A7B7B2502}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{400E4A30-867E-3A85-92D1-528A7B7B2502}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{44964699-59D6-3ADD-9F4B-E6EA803F4A1B}\1.0.0.0" Name="Class" Value="Requirement_Plugin.AFO_WV_PHASE" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{44964699-59D6-3ADD-9F4B-E6EA803F4A1B}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{44964699-59D6-3ADD-9F4B-E6EA803F4A1B}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{44964699-59D6-3ADD-9F4B-E6EA803F4A1B}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{4C5E6D4E-1033-3FCA-91DC-722D50A38C5A}\1.0.0.0" Name="Class" Value="Requirement_Plugin.W_AKTIVITAET" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{4C5E6D4E-1033-3FCA-91DC-722D50A38C5A}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{4C5E6D4E-1033-3FCA-91DC-722D50A38C5A}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{4C5E6D4E-1033-3FCA-91DC-722D50A38C5A}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{582D1A53-B0C6-323D-8B4E-FDAA10D37308}\1.0.0.0" Name="Class" Value="Requirement_Plugin.AFO_STATUS" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{582D1A53-B0C6-323D-8B4E-FDAA10D37308}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{582D1A53-B0C6-323D-8B4E-FDAA10D37308}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{582D1A53-B0C6-323D-8B4E-FDAA10D37308}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{5E0A634B-1E87-3535-B21E-711FCCC8E597}\1.0.0.0" Name="Class" Value="Requirement_Plugin.SYS_DETAILSTUFE" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{5E0A634B-1E87-3535-B21E-711FCCC8E597}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{5E0A634B-1E87-3535-B21E-711FCCC8E597}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{5E0A634B-1E87-3535-B21E-711FCCC8E597}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{5E1E504C-95C7-4B14-A0F6-70329F70084A}\1.0.0.0" Name="Class" Value="EA.ObjectType" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{5E1E504C-95C7-4B14-A0F6-70329F70084A}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{5E1E504C-95C7-4B14-A0F6-70329F70084A}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{5E1E504C-95C7-4B14-A0F6-70329F70084A}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{650AD93B-9BC3-3735-B59E-200AFE81F3BA}\1.0.0.0" Name="Class" Value="Requirement_Plugin.AFO_VERERBUNG" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{650AD93B-9BC3-3735-B59E-200AFE81F3BA}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{650AD93B-9BC3-3735-B59E-200AFE81F3BA}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{650AD93B-9BC3-3735-B59E-200AFE81F3BA}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{6C5B9C27-430A-3A2A-ACDD-092B1CD2DB5A}\1.0.0.0" Name="Class" Value="Requirement_Plugin.AFO_WV_NACHWEISART" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{6C5B9C27-430A-3A2A-ACDD-092B1CD2DB5A}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{6C5B9C27-430A-3A2A-ACDD-092B1CD2DB5A}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{6C5B9C27-430A-3A2A-ACDD-092B1CD2DB5A}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{729AA375-24A2-346D-803F-95BEEF2ABD69}\1.0.0.0" Name="Class" Value="Requirement_Plugin.ST_WV_PHASE" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{729AA375-24A2-346D-803F-95BEEF2ABD69}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{729AA375-24A2-346D-803F-95BEEF2ABD69}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{729AA375-24A2-346D-803F-95BEEF2ABD69}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{751FBFA3-3E0F-3A8E-887D-856FDE21B0F0}\1.0.0.0" Name="Class" Value="Requirement_Plugin.ST_INTERESSE" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{751FBFA3-3E0F-3A8E-887D-856FDE21B0F0}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{751FBFA3-3E0F-3A8E-887D-856FDE21B0F0}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{751FBFA3-3E0F-3A8E-887D-856FDE21B0F0}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{830726B2-E31A-3602-8862-26BD78AF7F32}\1.0.0.0" Name="Class" Value="Requirement_Plugin.AFO_PROJEKTROLLE" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{830726B2-E31A-3602-8862-26BD78AF7F32}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{830726B2-E31A-3602-8862-26BD78AF7F32}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{830726B2-E31A-3602-8862-26BD78AF7F32}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{87D762A9-45CC-38F1-AABB-AEAD5BC8A9E3}\1.0.0.0" Name="Class" Value="Requirement_Plugin.AFO_OPERATIVEBEWERTUNG" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{87D762A9-45CC-38F1-AABB-AEAD5BC8A9E3}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{87D762A9-45CC-38F1-AABB-AEAD5BC8A9E3}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{87D762A9-45CC-38F1-AABB-AEAD5BC8A9E3}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{96433870-1C4C-33D3-A49C-73C311248952}\1.0.0.0" Name="Class" Value="Requirement_Plugin.AFO_KRITIKALITAET" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{96433870-1C4C-33D3-A49C-73C311248952}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{96433870-1C4C-33D3-A49C-73C311248952}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{96433870-1C4C-33D3-A49C-73C311248952}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B19A05BA-D2F8-36DC-B98E-2939D973BBDF}\1.0.0.0" Name="Class" Value="Requirement_Plugin.ST_GRUPPE" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B19A05BA-D2F8-36DC-B98E-2939D973BBDF}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B19A05BA-D2F8-36DC-B98E-2939D973BBDF}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B19A05BA-D2F8-36DC-B98E-2939D973BBDF}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B329C99C-3154-32CC-97B8-1216078CD7C1}\1.0.0.0" Name="Class" Value="Requirement_Plugin.SYS_ARTIKEL" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B329C99C-3154-32CC-97B8-1216078CD7C1}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B329C99C-3154-32CC-97B8-1216078CD7C1}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B329C99C-3154-32CC-97B8-1216078CD7C1}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B428A8FE-7272-3569-9E8C-30660FF635F8}\1.0.0.0" Name="Class" Value="Requirement_Plugin.ST_AKTEUR_TYP" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B428A8FE-7272-3569-9E8C-30660FF635F8}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B428A8FE-7272-3569-9E8C-30660FF635F8}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B428A8FE-7272-3569-9E8C-30660FF635F8}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B5E5E87E-CE5C-39A7-98A2-2D87716FA5EC}\1.0.0.0" Name="Class" Value="Requirement_Plugin.AFO_PRIORITAET_VERGABE" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B5E5E87E-CE5C-39A7-98A2-2D87716FA5EC}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B5E5E87E-CE5C-39A7-98A2-2D87716FA5EC}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B5E5E87E-CE5C-39A7-98A2-2D87716FA5EC}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B6125382-D9D8-3FA8-A0B7-D011FCA2CCA4}\1.0.0.0" Name="Class" Value="Requirement_Plugin.AFO_FUNKTIONAL" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B6125382-D9D8-3FA8-A0B7-D011FCA2CCA4}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B6125382-D9D8-3FA8-A0B7-D011FCA2CCA4}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B6125382-D9D8-3FA8-A0B7-D011FCA2CCA4}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B65D2D63-6633-3DFD-8DA5-336EFC81756C}\1.0.0.0" Name="Class" Value="Requirement_Plugin.AFO_WV_ART" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B65D2D63-6633-3DFD-8DA5-336EFC81756C}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B65D2D63-6633-3DFD-8DA5-336EFC81756C}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{B65D2D63-6633-3DFD-8DA5-336EFC81756C}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{BA81F218-F87B-3760-BEE8-5A1F2D0D3667}\1.0.0.0" Name="Class" Value="Requirement_Plugin.SYS_ERFUELLT_AFO" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{BA81F218-F87B-3760-BEE8-5A1F2D0D3667}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{BA81F218-F87B-3760-BEE8-5A1F2D0D3667}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{BA81F218-F87B-3760-BEE8-5A1F2D0D3667}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{C3BCF346-768F-35F2-99EE-B419A6DD89B4}\1.0.0.0" Name="Class" Value="Requirement_Plugin.SYS_SUBORDINATES_AFO" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{C3BCF346-768F-35F2-99EE-B419A6DD89B4}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{C3BCF346-768F-35F2-99EE-B419A6DD89B4}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{C3BCF346-768F-35F2-99EE-B419A6DD89B4}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{CCFF5113-B2F2-35FB-8AE7-3CD7BD2A4F61}\1.0.0.0" Name="Class" Value="Requirement_Plugin.IN_CATEGORY" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{CCFF5113-B2F2-35FB-8AE7-3CD7BD2A4F61}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{CCFF5113-B2F2-35FB-8AE7-3CD7BD2A4F61}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{CCFF5113-B2F2-35FB-8AE7-3CD7BD2A4F61}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D6BDFB54-BAA6-3875-A951-E32FFC18D1E3}\1.0.0.0" Name="Class" Value="Requirement_Plugin.AFO_QS_STATUS" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D6BDFB54-BAA6-3875-A951-E32FFC18D1E3}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D6BDFB54-BAA6-3875-A951-E32FFC18D1E3}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{D6BDFB54-BAA6-3875-A951-E32FFC18D1E3}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{F9535867-3910-3EB3-8C43-87BFB95521F0}\1.0.0.0" Name="Class" Value="Requirement_Plugin.AFO_BEZUG" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{F9535867-3910-3EB3-8C43-87BFB95521F0}\1.0.0.0" Name="Assembly" Value="Requirement_Plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{F9535867-3910-3EB3-8C43-87BFB95521F0}\1.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="Record\{F9535867-3910-3EB3-8C43-87BFB95521F0}\1.0.0.0" Name="CodeBase" Value="file:///[#fil7E88128EC402AABA97D95521FE4512C6]" Type="string" Action="write" />
+          </Component>
+    <Component Id="ProductComponentsRegEntries" Directory="INSTALLFOLDER" Guid="FF9CF78C-37D6-40EF-A127-37EA7C0BD64D">
+      <RegistryKey Root="HKCU" Key="Software\Sparx Systems\EAAddins\Requirement_Plugin" Action="create">
+        <RegistryValue Type="string" Value="Requirement_Plugin.Requirement_PluginClass" />
+      </RegistryKey>
+    </Component>
+    <!-- Include Images. -->
+    <ComponentGroup Id="Product_Images" Directory="IMAGES">
+      <!-- Include Images Test. -->
+      <Component Id="Product_Image">
+        <File Id="fil7E88128EC402AABA97D95521FE4512C7" KeyPath="yes" Source="C:\Prog\Requ_Addin\RPI_V2\RPI_Sourcecode\Images\Satzschablone_normal.jpg" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
